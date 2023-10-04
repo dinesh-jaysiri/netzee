@@ -72,3 +72,23 @@ a {
     }
 }
 
+
+/* list */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+   padding-left: 3rem;
+    color: var(--color-heading);
+}
+
+.list--tick .list__item {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
