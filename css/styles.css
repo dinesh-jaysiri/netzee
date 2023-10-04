@@ -3,3 +3,72 @@
     --color-heading: #242424;
     --color-body:#4B4A4A;
 }
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+    /* 62.5 of 16px = 10px */
+    /* 1 rem = 10 px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: var(--color-body);
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+
+h1,h2,h3 {
+    color: var(--color-heading);
+}
+
+h1{
+    font-size: 6rem;
+    line-height: 6.9rem;
+    margin-bottom: 3rem;
+    margin-top: 5.6rem;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 6.4rem;
+        margin-bottom: 5.7rem;
+    }
+
+    h3 {
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
