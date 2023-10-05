@@ -113,3 +113,51 @@ a {
     cursor: pointer;
 }
 
+
+/* icon */
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon--white{
+    fill: white;
+}
+
+.icon--gray{
+    fill: #777575;
+}
+
+.icon--large{
+    width: 54px;
+    height: 54px;
+}
+
+.icon-container {
+    background: var(--color-primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:1024px) {
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-container {
+        width: 55px;
+        height: 55px;
+    }
+
+    .icon--large {
+        width: 30px;
+        height: 30px;
+    }
+}
