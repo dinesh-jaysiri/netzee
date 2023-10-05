@@ -119,6 +119,7 @@ a {
 .icon {
     width: 30px;
     height: 30px;
+    fill: var(--color-heading);
 }
 
 .icon--white{
@@ -132,6 +133,11 @@ a {
 .icon--large{
     width: 54px;
     height: 54px;
+}
+
+.icon--small {
+    width: 20px;
+    height: 20px;
 }
 
 .icon-container {
