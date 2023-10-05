@@ -192,3 +192,17 @@ a {
     width: 130px;
     justify-content: space-between;
 }
+
+/* media */
+
+.media {
+    display: flex;
+}
+
+.media__heading {
+    line-height: 1;
+}
+
+.media__body {
+    margin-left: 18px;
+}
