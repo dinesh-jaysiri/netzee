@@ -259,3 +259,20 @@ a {
         text-align: left;
     }
 }
+
+/* btn row  */
+
+.btn__row .btn:nth-child(1) {
+    margin-right: 4rem;
+}
+
+.btn__row {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:1024px){
+    .btn__row{
+        justify-content: start;
+    }
+}
