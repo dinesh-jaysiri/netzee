@@ -2,6 +2,7 @@
     --color-primary:#F83F6C;
     --color-heading: #242424;
     --color-body:#4B4A4A;
+    --color-dark-background:#F3F1F1;
 }
 
 *,
@@ -28,6 +29,17 @@ body {
 h1,h2,h3 {
     color: var(--color-heading);
 }
+h4{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+
+    line-height: 1;
+    font-weight: 400;
+    margin:0 ;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 h1{
     font-size: 6rem;
@@ -38,7 +50,10 @@ h1{
 
 h2 {
     font-size: 5rem;
+    line-height: 5rem;
     margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
 
 }
 
@@ -205,4 +220,42 @@ a {
 
 .media__body {
     margin-left: 18px;
+}
+
+
+/* Grids */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* block */
+.block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container {
+    max-width: 1220px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block__tag {
+    text-align: center;
+}
+
+.block--dark {
+    background: var(--color-dark-background) ;
+}
+
+@media screen and (min-width:1024px) {
+    .block h2, .block__mini-title, .block__tag{
+        text-align: left;
+    }
 }
