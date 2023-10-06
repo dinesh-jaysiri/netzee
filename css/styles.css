@@ -69,6 +69,7 @@ p{
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (min-width:1024px) {
@@ -321,4 +322,71 @@ transition: transform 0.3s ;
 .collapsible--expanded .collapsible__content{
     max-height: 100vh;
     opacity: 1;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.nav__container {
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.06);
+}
+
+.nav__list {
+    width: 100%;
+}
+
+.nav__item {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #919191;
+    transition: all .3s;
+
+}
+
+.nav__item:hover {
+    color: var(--color-primary);
+    
+}
+
+.nav__toggler {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-heading);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav__toggler:hover {
+    cursor: pointer;
+    
+}
+
+.collapsible--expanded .nav__toggler {
+box-shadow: 0 0 3px var(--color-heading);
+}
+
+@media  screen and (min-width:768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__item {
+        border-bottom: 0;
+        font-size: 1.6rem;
+        padding: 0 15px;
+    }
 }
