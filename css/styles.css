@@ -253,14 +253,15 @@ a {
     padding-left: 10px;
     padding-right: 10px;
 }
+.block__continer--dark {
+    background: var(--color-dark-background) ;
+}
 
 .block__tag {
     text-align: center;
 }
 
-.block--dark {
-    background: var(--color-dark-background) ;
-}
+
 
 @media screen and (min-width:1024px) {
     .block h2, .block__mini-title, .block__tag{
