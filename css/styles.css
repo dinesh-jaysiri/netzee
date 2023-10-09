@@ -216,6 +216,12 @@ a {
     justify-content: space-between;
 }
 
+.indicator-continer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+}
+
 /* media */
 
 .media {
@@ -484,6 +490,35 @@ box-shadow: 0 0 3px var(--color-heading);
 
 
 
-/* slider */
+/* splide slider */
 
-/* features */
+.splide__arrows {
+    display: none;
+}
+
+.splide__pagination {
+    width: 130px;
+    padding-left: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.splide__pagination__page{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #D9D9D9;
+    border: 0;
+    padding-inline-end: unset;
+    transition: all 0.3s;
+}
+
+.splide__pagination__page.is-active{
+    background: var(--color-primary);
+    scale: 1.25;
+}
+

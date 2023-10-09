@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/splide-core.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
@@ -127,10 +128,50 @@
             </article>
           </div>
         </div>
-        <img src="images/image1.png" class="block__image"  />
+        <img src="images/image1.png" class="block__image" />
+      </div>
+    </section>
+
+    <section class="block__continer feature">
+      <div class="block container grid">
+        <div>
+          <div class="block__heading">
+            <h4 class="block__mini-title">netzee features</h4>
+            <h2 class="block__title">
+              Discover your world with <span class="primary--text">netzee</span>
+            </h2>
+            <p class="block__tag">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia, cupiditate.
+            </p>
+          </div>
+          <section class="splide">
+            <div class="splide__slider">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">Slide 01</li>
+                  <li class="splide__slide">Slide 02</li>
+                  <li class="splide__slide">Slide 03</li>
+                  <li class="splide__slide">Slide 04</li>
+                  <li class="splide__slide">Slide 05</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
 
     <script src="js/main.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        autoplay: true,
+      });
+
+      splide.mount();
+    </script>
   </body>
 </html>
