@@ -17,6 +17,8 @@ html {
     /* 62.5 of 16px = 10px */
     /* 1 rem = 10 px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -487,9 +489,6 @@ box-shadow: 0 0 3px var(--color-heading);
 }
 
 
-
-
-
 /* splide slider */
 
 .splide__arrows {
@@ -515,10 +514,39 @@ box-shadow: 0 0 3px var(--color-heading);
     border: 0;
     padding-inline-end: unset;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .splide__pagination__page.is-active{
     background: var(--color-primary);
     scale: 1.25;
 }
+
+  /* features */
+
+  .feature h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2.7rem;
+    color: var(--color-heading);
+  }
+
+  .feature_slide{
+
+  }
+
+  .feature__image {
+    width: 100%;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width:1024px) {
+    .feature__image {
+        margin-right: unset;
+    }
+  }
+
+
 
