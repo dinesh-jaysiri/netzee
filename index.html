@@ -22,7 +22,7 @@
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item"><a href="#">home</a></li>
-          <li class="nav__item"><a href="#">why us</a></li>
+          <li class="nav__item"><a href="#whyus">why us</a></li>
           <li class="nav__item"><a href="#">netzee feature</a></li>
           <li class="nav__item"><a href="#">gallery</a></li>
           <li class="nav__item"><a href="#">merchants</a></li>
@@ -61,20 +61,73 @@
       <img class="hero__image" src="images/hero.png" alt="iphone" />
     </section>
 
-    <section class="block__continer block__continer--dark whyus ">
-      <div class="block  container grid grid--1x2">
-        <div>
+    <section id="whyus" class="block__continer block__continer--dark whyus">
+      <div class="block container grid grid--1x2">
+        <div class="block__data">
           <div class="block__heading">
             <h4 class="block__mini-title">why us</h4>
-            <h2 class="block__title">Become a netizeeker!</h2>
+            <h2 class="block__title">
+              Become a <span class="primary--text">netizeeker!</span>
+            </h2>
             <p class="block__tag">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Mollitia, cupiditate.
+              Become a Netizen to explore, experience, and share local deals and
+              experiences with ease.
             </p>
           </div>
-          <div>content1</div>
+          <div>
+            <article class="media">
+              <div class="media__image">
+                <div class="icon-container">
+                  <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="media__body">
+                <h3 class="media__heading">Explore</h3>
+                <p class="media__content">
+                  Explore local deals and experiences with ease, Netzee
+                  categorizes everything for effortless discovery near you.
+                </p>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media__image">
+                <div class="icon-container">
+                  <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#share"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="media__body">
+                <h3 class="media__heading">ExPerience & Share</h3>
+                <p class="media__content">
+                  Once you find what you love, experience it to the fullest and
+                  share it with others.
+                </p>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media__image">
+                <div class="icon-container">
+                  <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#follow"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="media__body">
+                <h3 class="media__heading">Follow</h3>
+                <p class="media__content">
+                  Customize favorites, follow businesses, and get real-time
+                  updates on what you love.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div>content 2</div>
+        <img src="images/image1.png" class="block__image"  />
       </div>
     </section>
 
