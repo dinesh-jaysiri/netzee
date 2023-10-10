@@ -164,6 +164,7 @@ a {
 .icon--small {
     width: 20px;
     height: 20px;
+    min-width: 20px;
 }
 
 .icon-container {
@@ -308,6 +309,8 @@ a {
 .collapsible__header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .collapsible__title {
@@ -318,8 +321,8 @@ a {
 }
 
 .collapsible__chevron{
-transform: rotate(-90deg);
-transition: transform 0.3s ;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ;
 }
 
 .collapsible__content{
@@ -531,9 +534,6 @@ box-shadow: 0 0 3px var(--color-heading);
     color: var(--color-heading);
   }
 
-  .feature_slide{
-
-  }
 
   .feature__image {
     width: 100%;
@@ -602,3 +602,34 @@ box-shadow: 0 0 3px var(--color-heading);
 }
 
 
+/* merchants */
+
+.merchants .block__image {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.merchants .collapsible {
+    margin-bottom: 3rem;
+}
+
+.merchants .block__data {
+    grid-row: 2;
+}
+
+.merchants .block__image {
+    grid-row: 1;
+}
+
+@media screen and (min-width:1024px) {
+    .merchants .block__data {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .merchants .block__image {
+        grid-row: 1;
+        margin-left: unset;
+    }
+
+}
