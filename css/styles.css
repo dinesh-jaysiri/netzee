@@ -157,8 +157,8 @@ a {
 }
 
 .icon--large{
-    width: 54px;
-    height: 54px;
+    width: 45px;
+    height: 45px;
 }
 
 .icon--small {
@@ -656,4 +656,133 @@ box-shadow: 0 0 3px var(--color-heading);
         margin-bottom: 0;
         margin-right: 0;
     }
+}
+
+/* footer */
+
+.footer {
+    background: #242424;
+    color: white;
+    
+}
+
+.footer .block {
+    padding-bottom: 2rem;
+}
+
+.footer .list {
+    font-size: 1.6rem;
+}
+
+.footer .list__item {
+    margin-top: 1rem;
+}
+
+.footer .collapsible__title {
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer__section {
+    border-bottom: 1px solid #605F5F;
+    padding: 2rem;
+}
+
+
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__brand img {
+    width: 23rem;
+}
+
+.footer__copy-rights {
+    font-size: 1.6rem;
+    opacity: .3;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.footer .follow .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+}
+
+.footer .follow .collapsible__title {
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .follow .collapsible__chevron {
+    display: none;
+}
+
+.footer .follow .follow__links {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+
+.footer .follow .icon {
+   margin-left: 10px;
+   margin-right: 10px;
+   
+}
+
+.qr-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+}
+@media screen and (min-width:1024px) {
+    .footer__sections{
+        grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    }
+
+    .footer .collapsible__chevron {
+        display: none;
+    }
+
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer__section {
+        border-bottom: 0;
+        
+    }
+
+    .footer__brand {
+        order: -1;
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+    .qr {
+        order: 1;
+    }
+    .qr .collapsible__header {
+        display: none;
+    }
+    .footer .follow .collapsible__title {
+            
+        margin-left: 0;
+    }
+
+    .footer .follow .icon {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .footer .follow .follow__links {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .qr-image {
+        margin-top: 0;
+    }
+
 }
