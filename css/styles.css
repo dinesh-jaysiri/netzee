@@ -748,8 +748,8 @@ box-shadow: 0 0 3px var(--color-heading);
 }
 
 .qr-image {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     margin-top: 1rem;
 }
 @media screen and (min-width:1024px) {
