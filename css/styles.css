@@ -518,13 +518,15 @@ a {
   padding-top: 140px;
 }
 
+
+
 .hero__image {
   max-width: 65vw;
   width: 100%;
   margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(10vw);
+  transform: translateX(16vw);
 }
 .lg--text {
   display: none;
@@ -535,6 +537,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+    .hero picture {
+       margin-left: auto;
+    }
   .hero__image {
     margin-top: 0;
     max-width: 400px;
@@ -637,9 +642,11 @@ a {
 
 .feature__image {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   margin-left: auto;
   margin-right: auto;
+  order: -1;
+  margin-bottom: 100px;
 }
 
 .feature .list__item {
@@ -650,6 +657,9 @@ a {
   .feature__image {
     margin-right: unset;
     max-width: 300px;
+    order: 1;
+    margin-bottom:0;
+
   }
 
   .feature__description {
@@ -732,10 +742,12 @@ a {
 
 /* merchants */
 
+.merchants picture {
+    text-align: center;
+}
+
 .merchants .block__image {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .merchants .collapsible {
   margin-bottom: 3rem;
@@ -757,6 +769,10 @@ a {
   .merchants .block__data {
     grid-column: 2;
     grid-row: 1;
+  }
+
+  .merchants picture {
+    text-align: left;
   }
 
   .merchants .block__image {
@@ -824,7 +840,7 @@ a {
 
 .footer {
   background: #242424;
-  color: white;
+  color: #999;
 }
 
 .footer .block {
@@ -840,9 +856,12 @@ a {
 }
 
 .footer .collapsible__title {
-  color: white;
+  color: #999;
   text-transform: uppercase;
   font-size: 14px;
+}
+.footer .collapsible__chevron {
+    fill: #999;
 }
 
 .footer__section {
@@ -927,6 +946,7 @@ a {
   }
   .footer .collapsible__title {
     font-size: 1.8rem;
+    
   }
   .footer .follow .collapsible__title {
     margin-left: 0;
@@ -963,4 +983,17 @@ a {
   .footer__section {
     padding: 2rem;
   }
+}
+
+/* privacy_notice */
+
+.privacy_notice {
+    padding-top: 100px;
+}
+.privacy_notice h2, .privacy_notice h3, .privacy_notice h4 {
+    text-align: left;
+}
+
+.privacy_notice h4 {
+    text-transform: unset;
 }

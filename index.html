@@ -66,12 +66,22 @@
         </div>
       </div>
 
-      <img
-      data-aos="fade-up-left"
-        class="hero__image"
-        src="images/hero.png"
-        alt="iphone"
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/herox1.webp"
+          media="(max-width: 767px)"
+        />
+
+        <source type="image/webp" srcset="images/herox2.webp" />
+
+        <img
+          class="hero__image"
+          src="images/herox2.png"
+          srcset="images/herox2.webp 2x"
+          alt="iPhone"
+        />
+      </picture>
     </section>
 
     <!-- why us -->
@@ -142,10 +152,21 @@
             </article>
           </div>
         </div>
-        <img
-          src="images/image1.png"
-          class="block__image"
-        />
+        <picture class="block__image">
+          <source
+            type="image/webp"
+            srcset="images/whyusx1.webp"
+            media="(max-width: 767px)"
+          />
+
+          <source type="image/webp" srcset="images/whyusx2.webp" />
+          <img
+            class="block__image"
+            src="images/whyusx2.png"
+            srcset="images/whyusx2.webp 2x"
+            alt="why us"
+          />
+        </picture>
       </div>
     </section>
 
@@ -349,19 +370,19 @@
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img class="ss" src="images/ss1.png" alt="" />
+                    <img class="ss" src="images/ss1x2.webp" alt="app ss" />
                   </li>
                   <li class="splide__slide">
-                    <img class="ss" src="images/ss2.png" alt="" />
+                    <img class="ss" src="images/ss2x2.webp" alt="app ss" />
                   </li>
                   <li class="splide__slide">
-                    <img class="ss" src="images/ss3.png" alt="" />
+                    <img class="ss" src="images/ss3x2.webp" alt="app ss" />
                   </li>
                   <li class="splide__slide">
-                    <img class="ss" src="images/ss4.png" alt="" />
+                    <img class="ss" src="images/ss4x2.webp" alt="app ss" />
                   </li>
                   <li class="splide__slide">
-                    <img class="ss" src="images/ss5.png" alt="" />
+                    <img class="ss" src="images/ss5x2.webp" alt="app ss" />
                   </li>
                 </ul>
               </div>
@@ -375,7 +396,7 @@
 
     <section id="merchants" class="block__container merchants">
       <div class="block container grid grid--1x2">
-        <div  class="block__data">
+        <div class="block__data">
           <div class="block__heading">
             <h4 class="block__mini-title">merchants</h4>
             <h2 class="block__title">Are you a Merchant?</h2>
@@ -456,11 +477,21 @@
             </div>
           </div>
         </div>
-        <img
-          class="block__image"
-          src="images/merchents.png"
-          alt=""
-        />
+        <picture  >
+          <source
+            type="image/webp"
+            srcset="images/merchentsx1.webp"
+            media="(max-width: 767px)"
+          />
+
+          <source type="image/webp" srcset="images/merchentsx2.webp" />
+          <img
+            src="images/merchentsx2.png"
+            class="block__image"
+            srcset="images/merchentsx2.webp 2x"
+            alt="merchants"
+          />
+        </picture>
       </div>
     </section>
 
@@ -498,27 +529,17 @@
             </button>
           </div>
         </div>
-        <div class="video" id="videoContainer">
-          <video controls preload="metadata" id="yourVideo">
+        <div class="video" >
+          <video controls autoplay muted preload="metadata" >
             <source src="videos/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <img
-            src="images/videoPoster.png"
+            src="images/videoPoster.webp"
             alt="Poster Image"
-            poster="images/videoPoster.png"
+            poster="images/videoPoster.webp"
           />
         </div>
-        >
-        <!-- <iframe
-         class="video"
-          src="https://www.youtube.com/embed/b0HfmY64eSE"
-          title="I bought the most FUTURISTIC Tech in the World"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          id="yourIFrame"
-        ></iframe> -->
       </div>
     </section>
 
@@ -536,8 +557,8 @@
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">Home</a></li>
-              <li class="list__item"><a href="#">Privacy Notice</a></li>
-              <li class="list__item"><a href="#">Terms of Service</a></li>
+              <li class="list__item"><a href="/privacy_notice.html">Privacy Notice</a></li>
+              <li class="list__item"><a href="/privacy_notice.html">Terms of Service</a></li>
             </ul>
           </div>
         </section>
