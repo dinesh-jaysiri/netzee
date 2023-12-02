@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Netzee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/splide-core.min.css" />
@@ -39,7 +39,7 @@
     <!-- hero -->
 
     <section class="block container grid grid--1x2 hero">
-      <div data-aos="fade-up-right">
+      <div>
         <div class="block__heading">
           <h1 class="block__title">
             Your instant connection to everything around...
@@ -104,7 +104,7 @@
               <div class="media__image">
                 <div class="icon-container">
                   <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#search"></use>
+                    <use href="images/sprite.svg#search"></use>
                   </svg>
                 </div>
               </div>
@@ -121,7 +121,7 @@
               <div class="media__image">
                 <div class="icon-container">
                   <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#share"></use>
+                    <use href="images/sprite.svg#share"></use>
                   </svg>
                 </div>
               </div>
@@ -138,7 +138,7 @@
               <div class="media__image">
                 <div class="icon-container">
                   <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#follow"></use>
+                    <use href="images/sprite.svg#follow"></use>
                   </svg>
                 </div>
               </div>
@@ -415,7 +415,7 @@
                   business
                 </h5>
                 <svg class="icon icon--small collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
+                  <use href="images/sprite.svg#chevron"></use>
                 </svg>
               </header>
               <div class="collapsible__content">
@@ -433,7 +433,7 @@
                   Affordable - An affordable solution to market your business
                 </h5>
                 <svg class="icon icon--small collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
+                  <use href="images/sprite.svg#chevron"></use>
                 </svg>
               </header>
               <div class="collapsible__content">
@@ -450,7 +450,7 @@
                   your products and services
                 </h5>
                 <svg class="icon icon--small collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
+                  <use href="images/sprite.svg#chevron"></use>
                 </svg>
               </header>
               <div class="collapsible__content">
@@ -467,7 +467,7 @@
                   advantage of dynamics in the market
                 </h5>
                 <svg class="icon icon--small collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
+                  <use href="images/sprite.svg#chevron"></use>
                 </svg>
               </header>
               <div class="collapsible__content">
@@ -477,7 +477,7 @@
             </div>
           </div>
         </div>
-        <picture  >
+        <picture>
           <source
             type="image/webp"
             srcset="images/merchentsx1.webp"
@@ -529,9 +529,13 @@
             </button>
           </div>
         </div>
-        <div class="video" >
-          <video controls autoplay muted preload="metadata" >
-            <source src="videos/video.mp4" type="video/mp4" />
+        <div class="video">
+          <video controls autoplay muted preload="metadata">
+            <source
+              poster="images/videoPoster.webp"
+              src="videos/video.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
           <img
@@ -551,14 +555,18 @@
           <header class="collapsible__header">
             <h5 class="collapsible__title">usefull links</h5>
             <svg class="icon icon--small icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">Home</a></li>
-              <li class="list__item"><a href="/privacy_notice.html">Privacy Notice</a></li>
-              <li class="list__item"><a href="/privacy_notice.html">Terms of Service</a></li>
+              <li class="list__item">
+                <a href="/privacy_notice.html">Privacy Notice</a>
+              </li>
+              <li class="list__item">
+                <a href="/privacy_notice.html">Terms of Service</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -569,7 +577,7 @@
           <header class="collapsible__header">
             <h5 class="collapsible__title">contact us</h5>
             <svg class="icon icon--small icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
@@ -587,7 +595,7 @@
           <header class="collapsible__header">
             <h5 class="collapsible__title">scan & join</h5>
             <svg class="icon icon--small icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
@@ -600,32 +608,32 @@
           <header class="collapsible__header">
             <h5 class="collapsible__title">follow us</h5>
             <svg class="icon icon--small icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <div class="follow__links">
               <a href="#">
                 <svg class="icon icon--gray icon--large">
-                  <use xlink:href="images/sprite.svg#facebook"></use>
+                  <use href="images/sprite.svg#facebook"></use>
                 </svg>
               </a>
 
               <a href="#">
                 <svg class="icon icon--gray icon--large">
-                  <use xlink:href="images/sprite.svg#instagram"></use>
+                  <use href="images/sprite.svg#instagram"></use>
                 </svg>
               </a>
 
               <a href="#">
                 <svg class="icon icon--gray icon--large">
-                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                  <use href="images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
 
               <a href="#">
                 <svg class="icon icon--gray icon--large">
-                  <use xlink:href="images/sprite.svg#mail"></use>
+                  <use href="images/sprite.svg#mail"></use>
                 </svg>
               </a>
             </div>
