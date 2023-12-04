@@ -19,18 +19,18 @@
     <!-- nav bar -->
     <nav class="navbar">
       <div class="navbar-container container">
-        <input type="checkbox" name="" id="" />
+        <input type="checkbox" id="menu-toggle" />
         <div class="hamburger-lines">
           <span class="line line1"></span>
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#whyus">Why Us</a></li>
-          <li><a href="#feature">Netzee Feature</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#merchants">Merchants</a></li>
+          <li><a href="#" onclick="closeMenu()">Home</a></li>
+          <li><a href="#whyus" onclick="closeMenu()">Why Us</a></li>
+          <li><a href="#feature" onclick="closeMenu()">Features</a></li>
+          <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+          <li><a href="#merchants" onclick="closeMenu()">Merchants</a></li>
         </ul>
         <a href="/" class="logo"><img src="images/logo.svg" /></a>
       </div>
@@ -92,11 +92,11 @@
           <div class="block__heading">
             <h4 class="block__mini-title">why us</h4>
             <h2 class="block__title">
-              Become a <span class="primary--text">netizeeker!</span>
+              Become a <span class="primary--text">Netzeeker!</span>
             </h2>
             <p class="block__tag">
-              Become a Netizen to explore, experience, and share local deals and
-              experiences with ease.
+              Become a Netzeeker to explore, experience, and share local deals
+              and experiences with ease.
             </p>
           </div>
           <div>
@@ -175,9 +175,9 @@
       <div class="block container">
         <div>
           <div class="block__heading">
-            <h4 class="block__mini-title">netzee features</h4>
+            <h4 class="block__mini-title">Netzee features</h4>
             <h2 class="block__title">
-              Discover your world with <span class="primary--text">netzee</span>
+              Discover your world with <span class="primary--text">Netzee</span>
             </h2>
           </div>
           <section id="feature__slide" class="splide">
@@ -191,10 +191,13 @@
                           Discover amazing deals and experiences around you!
                         </h5>
                         <p class="feature__description">
-                          Discover great local deals and experiences near you
-                          with netzee Categories. Find discounts, promotions,
-                          and dining adventures conveniently sorted by location.
-                          Your ultimate guide to the ideal options for you
+                          Discover the finest offers and captivating experiences
+                          in your vicinity. Delve into our curated collections
+                          of deals and experiences, organized by location and
+                          proximity. Whether you're in search of fantastic
+                          discounts, time-limited promotions right at your
+                          doorstep, or a delightful dining adventure, we've got
+                          you covered.
                         </p>
                         <ul class="list list--tick">
                           <li class="list__item">
@@ -231,7 +234,12 @@
                           to your preferred businesses and services. Simply tag
                           them as your favourites, and stay updated with their
                           latest news, promotions, and offerings, no matter
-                          where you are.
+                          where you are. Netzee ensures you're always in the
+                          loop, keeping you informed about all the exciting
+                          updates from your chosen favourites. With Netzee,
+                          you'll never miss out on anything that matters to you.
+                          Stay connected and enjoy a personalized and rewarding
+                          experience with your favourite establishments.
                         </p>
                         <ul class="list list--tick">
                           <li class="list__item">
@@ -247,7 +255,6 @@
                         class="feature__image"
                         src="animations/image2.json"
                         background="transparent"
-                        style="width: 100%"
                         speed="1"
                         loop
                         autoplay
@@ -262,7 +269,13 @@
                           Netzee takes the hassle out of discovering nearby
                           businesses and services by curating an active list.
                           Whether it's in your immediate vicinity or a specific
-                          location of your choice, we've got you covered.
+                          location of your choice, we've got you covered. Find
+                          the services you need within seconds, precisely when
+                          you need them the most. From local roadside assistance
+                          to trusted plumbers and electricians, Netzee puts an
+                          extensive network of reliable professionals at your
+                          fingertips. Experience the convenience of finding
+                          essential services effortlessly.
                         </p>
                         <ul class="list list--tick">
                           <li class="list__item">
@@ -277,7 +290,6 @@
                         class="feature__image"
                         src="animations/image3.json"
                         background="transparent"
-                        style="width: 100%"
                         speed="1"
                         loop
                         autoplay
@@ -295,7 +307,14 @@
                           specific needs. Explore by Categories that meets your
                           interests and fine-tune your search by location and
                           proximity. Get ready to discover your perfect match in
-                          no time!
+                          no time! Netzee search can tailor your results to meet
+                          your specific needs. Explore by Categories that meets
+                          your interests and fine-tune your search by location
+                          and proximity. Get ready to discover your perfect
+                          match in no time! Additionally, share exciting
+                          business news to keep your audience engaged. Netzee
+                          makes it seamless to promote your business and reach
+                          the right customers, all with just a few clicks.
                         </p>
                         <ul class="list list--tick">
                           <li class="list__item">
@@ -307,10 +326,9 @@
                         </ul>
                       </div>
                       <lottie-player
-                        class="feature__image"
+                        class="feature__image badboy"
                         src="animations/image4.json"
                         background="transparent"
-                        style="width: 100%"
                         speed="1"
                         loop
                         autoplay
@@ -327,6 +345,12 @@
                           audience. Take advantage of our platform to create
                           micro promotions that add a touch of spontaneity,
                           grabbing attention for several hours or even days.
+                          Additionally, share exciting business news to keep
+                          your audience engaged. Netzee makes it seamless to
+                          promote your business and reach the right customers,
+                          all with just a few clicks. Experience the power of
+                          effective promotion and unlock new growth
+                          opportunities for your business.
                         </p>
                         <ul class="list list--tick">
                           <li class="list__item">
@@ -502,7 +526,7 @@
         <div class="block__data">
           <div class="block__heading">
             <h2 class="block__title">
-              Join <span class="primary--text">netzee</span> Now!
+              Join <span class="primary--text">Netzee</span> Now!
             </h2>
             <p class="block__tag">
               You are missing fantastic deals and experiences near you! But, not
@@ -565,7 +589,7 @@
                 <a href="/privacy_notice.html">Privacy Notice</a>
               </li>
               <li class="list__item">
-                <a href="/privacy_notice.html">Terms of Service</a>
+                <a href="/terms_of_service.html">Terms of Service</a>
               </li>
             </ul>
           </div>
@@ -648,66 +672,8 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
     <script src="js/splide.min.js"></script>
-    <script>
-      var ssSplide = new Splide("#ss", {
-        type: "loop",
-        perPage: 5,
-        focus: "center",
-        autoplay: true,
-        trimSpace: false,
-        breakpoints: {
-          1000: {
-            perPage: 3,
-          },
-          618: {
-            perPage: 1,
-          },
-        },
-      });
-      ssSplide.mount();
-
-      var featureSplide = new Splide("#feature__slide", {
-        type: "loop",
-        perPage: 1,
-        autoplay: true,
-      });
-
-      featureSplide.mount();
-      AOS.init();
-    </script>
-
-    <script>
-      $(".video").each(function () {
-        const videoContainer = $(this);
-        const video = videoContainer.find("video").get(0);
-
-        videoContainer.find("video").prop({
-          controls: true,
-          controlslist: "nodownload",
-        });
-
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (entry.isIntersecting) {
-              if (video.paused) {
-                videoContainer.find("video").prop("muted", true);
-                video.play();
-              }
-            } else {
-              video.pause();
-            }
-          },
-          {
-            threshold: 0.5,
-          }
-        );
-
-        observer.observe(video);
-      });
-    </script>
-    <!-- animations -->
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

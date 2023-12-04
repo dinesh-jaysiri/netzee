@@ -232,6 +232,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .media__heading {
@@ -273,10 +274,10 @@ a {
   margin-bottom: 4rem;
 }
 .container {
-  max-width: 1220px;
+  max-width: 1230px;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .block__continer--dark {
   background: var(--color-dark-background);
@@ -389,7 +390,7 @@ a {
 
 .menu-items li {
   list-style: none;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-bottom: 0.5rem;
   font-size: 1.8rem;
 }
@@ -633,6 +634,7 @@ a {
 
 /* features */
 
+
 .feature h5 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -649,8 +651,8 @@ a {
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
-  order: -1;
   margin-bottom: 100px;
+  order: -1;
 }
 
 .feature .list__item {
@@ -658,13 +660,20 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .feature .grid--1x2 {
+      grid-template-columns: 2fr 1fr;
+    }
   .feature__image {
     margin-right: unset;
-    max-width: 300px;
+    max-width: 330px;
     order: 1;
     margin-bottom:0;
 
   }
+  .feature__image.badboy {
+    max-width: 280px;
+  }
+
 
   .feature__description {
     font-size: 1.8rem;
@@ -767,6 +776,7 @@ a {
 
 .merchants .collapsible__content {
   font-size: 1.6rem;
+  padding-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -991,13 +1001,15 @@ a {
 
 /* privacy_notice */
 
-.privacy_notice {
+.privacy_notice,.tos {
     padding-top: 100px;
 }
-.privacy_notice h2, .privacy_notice h3, .privacy_notice h4 {
+.privacy_notice h2, .privacy_notice h3, .privacy_notice h4,.tos h2,
+.tos h3,
+.tos h4 {
     text-align: left;
 }
 
-.privacy_notice h4 {
+.privacy_notice h4 ,.tos h4{
     text-transform: unset;
 }
